@@ -1,15 +1,12 @@
 *
 ####################
-# ProgrammingTest1 #
+# ProgrammingTest3 #
 ####################
 
-!ProgrammingTest2.sln
+!ProgrammingTest3.sln
 
 !.gitignore
 !README.md
-!demo.bat
-!screenshots/
-!screenshots/*
 
 !Data/
 !Data/*
@@ -21,12 +18,3 @@
 !Backend/*
 !Backend/Controllers/**
 !Backend/Properties/**
-
-!frontend/
-!frontend/*
-!frontend/public/**
-!frontend/src/**
-
-# Ignore
-frontend/node_modules
-frontend/build
