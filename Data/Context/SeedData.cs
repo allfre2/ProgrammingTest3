@@ -26,9 +26,9 @@ namespace Data.Context
         }
         #endregion Utils
 
-        internal static IEnumerable<Product> GenerateProducts(int upperLimit = 5)
+        internal static IEnumerable<Product> GenerateProducts(int upperLimit = 7)
         {
-            var n = random.Next(0, upperLimit);
+            var n = random.Next(3, upperLimit);
             var products = new List<Product>();
 
             for (int i = 0; i < n; ++i)

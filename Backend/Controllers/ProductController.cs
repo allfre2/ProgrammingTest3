@@ -35,6 +35,7 @@ namespace Backend.Controllers
             try
             {
                 await unitOfWork.Products.Add(product);
+                product.Guid = Guid.NewGuid();
                 await unitOfWork.Complete();
                 return Created(HttpContext.Request.Path, product);
             }
