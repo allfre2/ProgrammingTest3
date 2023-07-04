@@ -9,13 +9,15 @@ import { ProductViewComponent } from './components/products/product-view/product
 import { UserViewComponent } from './components/users/user-view/user-view.component';
 import { LoginViewComponent } from './components/login/login-view/login-view.component';
 import { ApiService } from './services/api.service';
+import { EditProductComponent } from './components/edit-product/edit-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductViewComponent,
     UserViewComponent,
-    LoginViewComponent
+    LoginViewComponent,
+    EditProductComponent
   ],
   imports: [
     BrowserModule,

@@ -26,7 +26,7 @@ export class ApiService {
     );
   }
 
-  getProduct(n : number): Observable<Product> {
+  getProduct(n? : number): Observable<Product> {
     return this.httpClient.get<Product>(this.productsEndpoint + '/' + n).pipe(
       catchError((error : any) => {
         console.log('Ha ocurrido un error');

@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="card">
+        <div class="card-image-has-text-centered px-6">
+            <img src="assets/product.jpg" alt="Product Image">
+        </div>
+        <div class="card-content">
+            <p class="title is-size-5">{{ product?.name }}</p>
+            <p class="is-size-7 mb-2"><i>{{ product?.description }}</i></p>
+            <p *ngFor="let model of product?.models"> 
+                <b><em [style.color]="model.color">{{ model.color }}</em></b>
+                {{ model.price | currency }} 
+            </p>
+        </div>
+        <footer class="card-footer">
+            <p class="card-footer-item">
+                <button class="button is-success is-outlined">
+                    Guardar Cambios
+                </button>
+            </p>
+        </footer>
+    </div>
+</div>

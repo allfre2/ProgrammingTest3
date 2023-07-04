@@ -19,10 +19,14 @@
                         </div>
                         <footer class="card-footer">
                             <p class="card-footer-item">
-                                <button class="button is-primary is-outlined">Editar</button>
+                                <button [routerLink]="['/products', product.id]" class="button is-primary is-outlined">
+                                    Editar
+                                </button>
                             </p>
                             <p class="card-footer-item">
-                                <button class="button is-danger is-outlined">Eliminar</button>
+                                <button class="button is-danger is-outlined">
+                                    Eliminar
+                                </button>
                             </p>
                         </footer>
                     </div>
