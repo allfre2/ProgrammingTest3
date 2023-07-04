@@ -7,7 +7,7 @@ export interface Config {
 
 const DefaultConfig : Config = {
     api: 'http://localhost:',
-    port: '5279',
+    port: '5000',
     productsEndpoint: '/api/Product',
     modelsEndpoint: '/api/Model'
 };
